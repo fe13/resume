@@ -1,0 +1,56 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  /*手机网站点击链接触发颜色块的问题解决*/
+  -webkit-tap-highlight-color: transparent;
+  /*蓝框*/
+  outline: none;
+  /*禁止选择*/
+  user-select: none;
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font: 12px/1.5 "hiragino sans gb",arial;
+  min-width: 320px; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.resume-container {
+  margin-top: 48px; }
+  .resume-container .resume-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .resume-container .resume-header .faceimg {
+      display: block;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      margin-bottom: 10px; }
+    .resume-container .resume-header .myname {
+      font-size: 40px;
+      color: #363636;
+      font-weight: 600; }
+    .resume-container .resume-header .myintro {
+      font-size: 14px;
+      color: #4a4a4a;
+      margin-bottom: 24px; }
+    .resume-container .resume-header .myskill {
+      font-size: 14px;
+      text-align: center;
+      color: #4a4a4a;
+      margin-bottom: 24px; }
+    .resume-container .resume-header .centered {
+      display: flex;
+      justify-content: center; }
+      .resume-container .resume-header .centered > a {
+        padding: 8px 18px;
+        font-size: 24px;
+        color: #4a4a4a; }
