@@ -23,7 +23,7 @@ a {
   text-decoration: none; }
 
 .resume-container {
-  margin-top: 48px; }
+  margin: 48px 24px; }
   .resume-container .resume-header {
     display: flex;
     flex-direction: column;
