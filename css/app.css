@@ -8,7 +8,8 @@
   /*禁止选择*/
   user-select: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  transition: .2s; }
 
 body {
   margin: 0;
@@ -33,7 +34,8 @@ a {
     height: 22px;
     position: absolute;
     top: 14px;
-    left: 58px; }
+    left: 58px;
+    z-index: 999; }
   .nav-menu .nav-items {
     width: calc(100% - 80px);
     border-bottom: 1px solid #dbdbdb;
@@ -42,6 +44,8 @@ a {
     justify-content: flex-end; }
     .nav-menu .nav-items .nav-item {
       padding: 11px 16px; }
+      .nav-menu .nav-items .nav-item .fa-bars {
+        display: none; }
       .nav-menu .nav-items .nav-item > a {
         font-size: 16px;
         color: #7a7a7a;
@@ -108,16 +112,20 @@ a {
           border-radius: 5px;
           background-color: #fff;
           box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1); }
-          .resume-container .collections .coll-container .coll-box .coll-innerbox > img {
-            width: 100%;
-            max-width: 640px; }
-          .resume-container .collections .coll-container .coll-box .coll-innerbox > .box-title {
+          .resume-container .collections .coll-container .coll-box .coll-innerbox img {
+            width: 100%; }
+          .resume-container .collections .coll-container .coll-box .coll-innerbox .box-title {
             font-size: 24px;
             color: #363636;
             margin-bottom: 4px; }
-          .resume-container .collections .coll-container .coll-box .coll-innerbox > .box-describe {
+          .resume-container .collections .coll-container .coll-box .coll-innerbox .box-describe {
             font-size: 16px;
             color: #4a4a4a; }
+
+.coll-innerbox:hover {
+  transform: translate(0, -2px);
+  box-shadow: 0 17px 40px 0 rgba(1, 0, 0, 0.19), 0 0 0 1px rgba(10, 10, 10, 0.1) !important;
+  transition: .2s; }
 
 @media only screen and (max-width: 800px) {
   #collections > .coll-container > .coll-box {
@@ -125,6 +133,21 @@ a {
   .nav-menu > .nav-items {
     width: 100%;
     flex-direction: column;
-    align-items: flex-end; }
+    align-items: flex-end;
+    justify-content: flex-start; }
+    .nav-menu > .nav-items.hidden {
+      overflow: hidden; }
+    .nav-menu > .nav-items .nav-item {
+      background: #fff;
+      width: 100%;
+      z-index: 99;
+      text-align: right; }
+      .nav-menu > .nav-items .nav-item .fa-bars {
+        display: block;
+        height: 30px;
+        line-height: 30px; }
+  .nav-item:last-child {
+    border-bottom: 1px solid #dbdbdb;
+    box-shadow: 0 5px 5px 0 rgba(1, 0, 0, 0.19); }
   .nav-menu > .resume-icon {
     left: 18px; } }
