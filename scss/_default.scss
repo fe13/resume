@@ -12,10 +12,8 @@
 
 body {
     margin: 0;
-    padding: 0;
-    // background: $body-background;
-    font: 12px/1.5 "hiragino sans gb",arial;
-    
+    padding: 0; // background: $body-background;
+    font: 12px/1.5 "hiragino sans gb", arial;
     min-width: 320px;
 }
 
@@ -25,4 +23,6 @@ ul {
 
 a {
     text-decoration: none;
+    /*手型*/
+    cursor: pointer;
 }
