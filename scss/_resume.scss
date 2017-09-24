@@ -17,9 +17,9 @@
         display: flex;
         justify-content: flex-end;
         .nav-item {
-            // line-height: 52px;
             padding: 11px 16px;
-            .fa-bars {
+            position: relative;
+            .fa-bars,.fa-times {
                 display: none;
             }
             >a {
@@ -30,6 +30,10 @@
             a:hover {
                 color: #363636;
             }
+        }
+        .nav-line:hover {
+            border-bottom: 1px solid #3273dc; // box-sizing: border-box;
+            height: 52px;
         }
     }
 }
@@ -134,30 +138,30 @@
         width: 100%;
         flex-direction: column;
         align-items: flex-end;
-        justify-content: flex-start;
-        //  overflow: hidden;
-        &.hidden{
+        justify-content: flex-start; //  overflow: hidden;
+        &.hidden {
             overflow: hidden;
         }
-
         .nav-item {
             background: #fff;
             width: 100%;
             z-index: 99;
             text-align: right;
-            .fa-bars {
+            .fa {
+                font-size: 24px;
                 display: block;
                 height: 30px;
                 line-height: 30px;
             }
         }
     }
-
     .nav-item:last-child {
-        border-bottom: 1px solid #dbdbdb;
-        box-shadow: 0 5px 5px 0 rgba(1, 0, 0, .19);
+        margin-bottom: 10px; // border-bottom: 1px solid #dbdbdb;
+        transition: 0;
+        box-shadow: 0 2px 2px 0 rgba(1, 0, 0, .19);
     }
     .nav-menu>.resume-icon {
         left: 18px;
     }
 }
+
