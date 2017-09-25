@@ -24,15 +24,23 @@
             .fa-times {
                 display: none;
             }
-            >a {
+            >span,
+            i {
+                display: block;
+                width: 100%;
+                height: 100%;
                 font-size: 16px;
                 color: #7a7a7a;
                 line-height: 30px;
             }
-            a:hover {
+            span:hover,
+            i:hover {
                 color: #363636;
             }
-        }
+        } // .nav-item:hover {
+        //     color: #363636;
+        //     background: black;
+        // }
         .nav-line:hover {
             border-bottom: 1px solid #3273dc; // box-sizing: border-box;
             height: 52px;

@@ -47,11 +47,16 @@ a {
       .nav-menu .nav-items .nav-item .fa-bars,
       .nav-menu .nav-items .nav-item .fa-times {
         display: none; }
-      .nav-menu .nav-items .nav-item > a {
+      .nav-menu .nav-items .nav-item > span,
+      .nav-menu .nav-items .nav-item i {
+        display: block;
+        width: 100%;
+        height: 100%;
         font-size: 16px;
         color: #7a7a7a;
         line-height: 30px; }
-      .nav-menu .nav-items .nav-item a:hover {
+      .nav-menu .nav-items .nav-item span:hover,
+      .nav-menu .nav-items .nav-item i:hover {
         color: #363636; }
     .nav-menu .nav-items .nav-line:hover {
       border-bottom: 1px solid #3273dc;
