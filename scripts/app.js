@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let $navitems = document.querySelector('.nav-items');
     let $fabars = $navitems.querySelector('.fa');
+    let $ability = document.querySelector('.ability');
+
 
     $navitems.addEventListener('click', function (event) {
         // console.log('123');
@@ -13,32 +15,38 @@ document.addEventListener('DOMContentLoaded', function () {
                     $navitems.classList.remove('hidden')
                     $fabars.classList.remove('fa-bars');
                     $fabars.classList.add('fa-times');
-                    console.log('123');
-
                 }
                 break
             case target.matches('.fa-times'):
                 {
                     $navitems.classList.add('hidden')
-                    console.log('123');
                     $fabars.classList.remove('fa-times');
                     $fabars.classList.add('fa-bars');
-
+                }
+                break
+            case target.matches('.about-item'):
+                {
+                    console.log('123');
+                    $ability.classList.remove('hide');
+                    $navitems.classList.add('hidden');
+                    $fabars.classList.remove('fa-times');
+                    $fabars.classList.add('fa-bars');
                 }
                 break
             case target.matches('.real-item'):
                 {
                     $navitems.classList.add('hidden');
-                    console.log('456');
                     $fabars.classList.remove('fa-times');
                     $fabars.classList.add('fa-bars');
-                    
-
                 }
                 break
+
         }
     });
 
+    document.querySelector('.botton-close').addEventListener('click', function(){
+        $ability.classList.add('hide');
+    });
 
 
     console.log(`
