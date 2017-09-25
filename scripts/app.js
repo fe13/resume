@@ -24,9 +24,14 @@ document.addEventListener('DOMContentLoaded', function () {
                     $fabars.classList.add('fa-bars');
                 }
                 break
+            case target.matches('.home-item'):
+                {
+                    $ability.classList.add('hide');
+                }
+                break
             case target.matches('.about-item'):
                 {
-                    console.log('123');
+                    // console.log('123');
                     $ability.classList.remove('hide');
                     $navitems.classList.add('hidden');
                     $fabars.classList.remove('fa-times');
@@ -44,7 +49,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    document.querySelector('.botton-close').addEventListener('click', function(){
+
+
+    document.querySelector('.botton-close').addEventListener('click', function () {
         $ability.classList.add('hide');
     });
 
