@@ -102,9 +102,15 @@ a {
       .resume-container .resume-header .centered > a {
         padding: 8px 18px;
         font-size: 24px;
-        color: #4a4a4a; }
+        color: #4a4a4a;
+        line-height: 27px; }
         .resume-container .resume-header .centered > a .fa {
-          margin-right: 6px; }
+          margin-right: 6px;
+          font-size: 30px; }
+        .resume-container .resume-header .centered > a img {
+          height: 30px;
+          margin-right: 6px;
+          margin-top: 2px; }
   .resume-container .collections .coll-title {
     color: #363636;
     font-size: 32px;

@@ -94,11 +94,19 @@
                 padding: 8px 18px;
                 font-size: 24px;
                 color: #4a4a4a; // font-weight: 600;
+                line-height: 27px;
                 .fa {
                     margin-right: 6px;
                     font-size: 30px;
                 }
+                img {
+                    height: 30px;
+                    margin-right: 6px;
+                    margin-top: 2px;
+                }
+
             }
+            
         }
     }
     .collections {
